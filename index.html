@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Nepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+  </head>
+  <body onload="updateClock();">
+    <div class="content">
+      <!-- Navigation Bar -->
+      <header>
+        <nav class="navbar">
+          <div class="logo">DiscoverNepal</div>
+          <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+          <ul class="nav-links">
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#book" class="cta">Book Now</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Nepali Date and Time Section -->
+      <section class="date-time-section">
+        <div class="date-time-container">
+          <p>
+            <strong>Nepali Date:</strong> <span id="DATE_IN_ENGLISH"></span>
+          </p>
+          <p>
+            <strong>Current Time:</strong> <span id="TIME_IN_ENGLISH"></span>
+          </p>
+        </div>
+      </section>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Explore the Beauty of Nepal</h1>
+          <p>
+            Your adventure begins here. From the Himalayas to the birthplace of
+            Buddha, discover it all.
+          </p>
+          <a href="#destinations" class="cta">Discover More</a>
+        </div>
+      </section>
+
+      <!-- Destinations Section -->
+      <section id="destinations" class="destinations">
+        <h2>Top Destinations</h2>
+        <div class="destination-cards">
+          <div class="card">
+            <img src="assets/destinations/everest.jpg" alt="Mount Everest" />
+            <h3>Mount Everest</h3>
+            <p>
+              Experience the world's highest peak with thrilling treks and
+              stunning views.
+            </p>
+          </div>
+          <div class="card">
+            <img src="assets/destinations/pokhara.jpg" alt="Pokhara" />
+            <h3>Pokhara</h3>
+            <p>
+              A tranquil getaway with serene lakes and breathtaking mountains.
+            </p>
+          </div>
+          <div class="card">
+            <img src="assets/destinations/lumbini.jpg" alt="Lumbini" />
+            <h3>Lumbini</h3>
+            <p>
+              Visit the birthplace of Lord Buddha and immerse in spiritual
+              serenity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          &copy; 2024 Discover Nepal | Powered By
+          <a href="https://anantarajshrestha.com.np">Er.ANANTA RAJ SHRESTHA</a
+          >All Rights Reserved
+        </p>
+      </footer>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
