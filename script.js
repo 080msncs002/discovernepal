@@ -479,3 +479,9 @@ function englishToNepaliNumber(number) {
   }
   return number;
 }
+// Get the last modified date of the HTML file
+const lastModifiedDate = new Date(document.lastModified);
+const formattedDate = lastModifiedDate.toLocaleString(); // Format the date
+
+// Set the "Last Updated" time in the glowing box
+document.getElementById("lastUpdated").textContent = formattedDate;
