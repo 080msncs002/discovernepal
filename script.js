@@ -479,3 +479,17 @@ function englishToNepaliNumber(number) {
   }
   return number;
 }
+// Function to display the pop-up after 5 seconds
+setTimeout(function () {
+  document.getElementById("popup").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+}, 5000); // 5 seconds delay
+
+// Generate falling stars
+generateStars(30); // Generate 30 stars
+
+// Function to close the pop-up
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}

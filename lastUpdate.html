@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Website</title>
+    <style>
+      /* Glowing Box Style */
+      .glowing-box {
+        width: 30%;
+        padding: 5px;
+        margin: 5px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        text-align: right;
+        box-shadow: 0 0 10px crimson, 0 0 20px crimson, 0 0 30px crimson,
+          0 0 40px crimson;
+        animation: glowing 1.5s infinite alternate;
+      }
+
+      /* Animation for glowing effect */
+      @keyframes glowing {
+        0% {
+          box-shadow: 0 0 5px crimson, 0 0 10px crimson, 0 0 15px crimson,
+            0 0 20px crimson;
+        }
+        100% {
+          box-shadow: 0 0 15px rgba(255, 0, 255, 1),
+            0 0 25px rgba(255, 0, 255, 1), 0 0 35px rgba(255, 0, 255, 1),
+            0 0 45px rgba(255, 0, 255, 1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to My Static Website</h1>
+
+    <!-- Glowing Box for Last Updated -->
+    <div class="glowing-box">
+      <p>Last Updated: <span id="lastUpdated"></span></p>
+    </div>
+
+    <script>
+      // Get the last modified date of the HTML file
+      const lastModifiedDate = new Date(document.lastModified);
+      const formattedDate = lastModifiedDate.toLocaleString(); // Format the date
+
+      // Set the "Last Updated" time in the glowing box
+      document.getElementById("lastUpdated").textContent = formattedDate;
+    </script>
+  </body>
+</html>
